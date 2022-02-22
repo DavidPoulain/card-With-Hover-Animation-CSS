@@ -1,0 +1,88 @@
+body {
+    box-sizing: border-box;
+    background-color: #181818;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+    margin-top: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section > * {
+    flex-basis: 100%;
+}
+
+article {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    height: 514px;
+    text-align: center;
+    background-image: url(./images/Betty_B&W.jpeg);
+    background-size: cover;
+    margin: auto;
+    border-radius: 2em;
+    padding: 2em;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+
+article:hover {
+    transform: translateY(-50px);
+    background-image: url(./images/Betty_bis.jpg);
+    color: white;
+    /* text-shadow: 1px 1px 7px #12181A; */
+    box-shadow: 0.1em 1.5em 2em black;
+  }
+
+article h2 {
+    font-size: 1.8em;
+}
+
+/* article:hover h2 {
+    color: #0857A6;
+} */
+
+article:hover a {
+    background-color: #7e060c;
+}
+
+article a {
+    position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+article a:hover {
+    text-decoration: none;
+}
+
+.box__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: solid #8C8C8C 5px;
+    background-color: #262626;
+    max-width: 350px;
+    height: 564px;
+    border-radius: 2em;
+    box-shadow: 0.5em 0.5em 2em black;
+}
+
+.box__container--betty {
+    border: solid #7e060c 5px;
+}
